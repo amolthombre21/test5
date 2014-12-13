@@ -7,7 +7,7 @@ var MongoClient = require('mongodb').MongoClient;
 exports.index = function(req, res){
 		var userName="amolthombre";
 	var password="amolthombre";
-	MongoClient.connect("mongodb://"+userName+":"+password+"@ds063150.mongolab.com:63150/amolthombre", function(err, db) {
+	MongoClient.connect("mongodb://"+userName+":"+password+"@ds063150.mongolab.com:63150/test_db", function(err, db) {
 		  if(!err) {
 		    console.log("We are connected");
 		    var collection=db.collection('gumball');
