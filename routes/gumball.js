@@ -6,7 +6,7 @@ exports.getCall = function(req, res){
 	var id=parseInt(req.params.id);
 var userName="amolthombre";
 	var password="amolthombre";
-	MongoClient.connect("mongodb://"+userName+":"+password+"@ds063150.mongolab.com:63150/amolthombre", function(err, db) {
+	MongoClient.connect("mongodb://"+userName+":"+password+"@ds063150.mongolab.com:63150/test_db", function(err, db) {
 		  if(!err) {
 		    console.log("We are connected");
 		    var collection=db.collection('gumball');
@@ -31,7 +31,7 @@ exports.putCall=function(req,res){
 	var id=parseInt(req.params.id);
 	var userName="amolthombre";
 	var password="amolthombre";
-	MongoClient.connect("mongodb://"+userName+":"+password+"@ds063150.mongolab.com:63150/amolthombre", function(err, db) {
+	MongoClient.connect("mongodb://"+userName+":"+password+"@ds063150.mongolab.com:63150/test_db", function(err, db) {
 		  if(!err) {
 		    console.log("Connected to DB");
 		    var collection=db.collection('gumball');
