@@ -42,7 +42,7 @@ exports.putCall=function(req,res){
 		    	var count=data.countGumballs;
 		    	if(count>0){
 		    		count--;
-		    		collection.update({id:id},{$set:{countGumballs:countGumballs}},function(err,results){
+		    		collection.update({id:id},{$set:{countGumballs:count}},function(err,results){
 		    			
 		    			console.log("count is ="+countGumballs);
 		    			
